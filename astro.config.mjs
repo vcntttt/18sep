@@ -8,5 +8,7 @@ import netlify from "@astrojs/netlify";
 export default defineConfig({
   integrations: [tailwind(), react()],
   output: 'hybrid',
-  adapter: netlify()
+  adapter: netlify(),
+  site: 'https://vcntttt.github.io/',
+  base: '/cuanto-falta-para-el-18/'
 });
