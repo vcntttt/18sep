@@ -1,13 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Counter from "../components/Counter.jsx";
+import Counter from "../components/counter";
 ---
 
 <Layout title="CUANTO FALTA PARA EL 18">
-  <main>
-    <h1 class="text-white text-4xl text-center py-2">
+  <main class="p-40">
+    <h1 class="text-white text-5xl text-center py-2 uppercase font-bold">
       Cuánto falta para el 18
     </h1>
-    <Counter client:only/>
+    <div class="flex justify-center">
+      <Counter client:only/>
+    </div>
   </main>
 </Layout>
